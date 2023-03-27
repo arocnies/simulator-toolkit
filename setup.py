@@ -3,7 +3,7 @@ from distutils.core import setup
 setup(
     name='simtoolkit',
     version='1.0',
-    packages=['simtoolkit'],
+    packages=['simtoolkit', 'simtoolkit.models', 'simtoolkit.visuals'],
     install_requires=[
         'matplotlib~=3.7.1',
         'numpy==1.23.5',
