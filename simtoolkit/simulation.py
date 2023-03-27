@@ -65,9 +65,9 @@ class Simulation:
 
     def animate(self, frame: int, t: float, dt: float) -> None:
         self.update(t, dt)
-        self.show()
+        self.draw()
 
-    def show(self):
+    def draw(self):
         if self.figure is None:
             self._init_figure()
 
@@ -85,7 +85,7 @@ class Simulation:
 
         self._scale_view_to_limits()
 
-        # Show the plot
+    def show(self):
         plt.show()
 
     def _scale_view_to_limits(self):
