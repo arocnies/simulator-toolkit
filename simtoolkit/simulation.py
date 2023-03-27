@@ -86,6 +86,7 @@ class Simulation:
         self._scale_view_to_limits()
 
     def show(self):
+        self.draw()
         plt.show()
 
     def _scale_view_to_limits(self):
